@@ -4,6 +4,7 @@
 <head>
     <title>Jancatit Technology | The leading information technology</title>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" CONTENT="max-age=315360000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Join the thousands of businesses with us today.">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,10 +16,22 @@
     <meta property="og:locale" content="en_US">
     <link rel="canonical" href="http://jancatit.com/">
     <link rel="shortcut icon" href="static/www/ico/favicon.ico">
-    <link rel="stylesheet" href="static/fontello/css/fontello.min.css">
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/www/css/jancatit.min.css">
-    <link rel="stylesheet" href="static/revolution-slider/rs-plugin/css/settings.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/revolution-slider/rs-plugin/css/settings.min.201703072143.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="dist/www/css/jancatit.min.201703072143.css">
+    <script>
+        function checkWebp() {
+            try {
+                return (document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0);
+            } catch (err) {
+                return false;
+            }
+        }
+        var jc_format = checkWebp() ? ".webp" : ".jpg";
+        function getWebp(id, path, version) {
+            document.getElementById(id).src = "static/www/img/" + path + id + version + jc_format
+        }
+    </script>
 </head>
 
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
@@ -26,17 +39,15 @@
         <div class="container">
             <div class="menu-container page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#intro">
                     <span>Jancatit</span>Technology
                 </a>
             </div>
-
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="menu-container">
                     <ul class="nav navbar-nav">
@@ -63,7 +74,7 @@
             <div class="fullscreenbanner">
                 <ul>
                     <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
-                        <img src="static/www/img/sliders/revolution/bg1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img id="bg1" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                         <div class="tp-caption rs-caption-1 sft start custom-font-1" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="2000" data-easing="Back.easeInOut" data-endspeed="300">
                             <strong>Information technologies Driven</strong>
                         </div>
@@ -75,8 +86,11 @@
                             <span class="page-scroll"><a href="#contact" class="btn-u btn-brd btn-brd-hover btn-u-light">Contact Us</a></span>
                         </div>
                     </li>
+                    <script>
+                        getWebp("bg1", "sliders/revolution/", ".201703072143");
+                    </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
-                        <img src="static/www/img/sliders/revolution/bg2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img id="bg2" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                         <div class="tp-caption rs-caption-1 sft start custom-font-1" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
                             <strong>Dedicated Experienced Team</strong>
                         </div>
@@ -88,8 +102,11 @@
                             <span class="page-scroll"><a href="#contact" class="btn-u btn-brd btn-brd-hover btn-u-light">Contact Us</a></span>
                         </div>
                     </li>
+                    <script>
+                        getWebp("bg2", "sliders/revolution/", ".201703072143");
+                    </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
-                        <img src="static/www/img/sliders/revolution/bg3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img id="bg3" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                         <div class="tp-caption rs-caption-1 sft start custom-font-1" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
                             <strong>Our IT Products</strong>
                         </div>
@@ -101,6 +118,9 @@
                             <span class="page-scroll"><a href="#contact" class="btn-u btn-brd btn-brd-hover btn-u-light">Contact Us</a></span>
                         </div>
                     </li>
+                    <script>
+                        getWebp("bg3", "sliders/revolution/", ".201703072143");
+                    </script>
                 </ul>
             </div>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -149,7 +169,10 @@
                     <p>Focusing on designing adn developing the <strong>success business IT</strong> products with IT technologies.</p>
                 </div>
                 <div class="img-center">
-                    <img class="img-responsive" src="static/www/img/mockup.jpg" alt="">
+                    <img id="mockup" class="img-responsive" alt="">
+                    <script>
+                        getWebp("mockup", "", ".201703072143");
+                    </script>
                 </div>
             </div>
         </div>
@@ -203,7 +226,10 @@
                 </div>
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="static/www/img/product.jpg" alt="">
+                    <img id="product" class="img-responsive" alt="">
+                    <script>
+                        getWebp("product", "", ".201703072143");
+                    </script>
                 </div>
             </div>
         </div>
@@ -228,7 +254,6 @@
                 <div class="col-md-4"></div>
             </div>
         </div>
-
         <div class="copyright-section">
             <p>Copyright&copy;2017 Jancatit Technology Pte. Ltd. All Rights Reserved.</p>
             <span class="page-scroll"><a href="#intro"><i class="ftl-icon icon-angle-double-up back-to-top" style="padding-top: 4px;"></i></a></span>
@@ -250,15 +275,11 @@
         ga('create', 'UA-93090545-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script src="static/jquery/jquery.min.js"></script>
-    <script src="static/jquery/jquery-migrate.min.js"></script>
-    <script src="static/jquery-plugins/jquery.easing.min.js"></script>
-    <script src="static/jquery-plugins/jquery.parallax.min.js"></script>
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="static/smooth-scroll/smoothScroll.js"></script>
-    <script src="static/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="static/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js"></script>
-    <script src="static/www/js/jancatit.min.js"></script>
+    <script></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="dist/www/js/jancatit.min.201703072143.js"></script>
     <script>
         jQuery(document).ready(function() {
             App.init();
