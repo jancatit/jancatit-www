@@ -4,6 +4,7 @@
 <head>
     <title>Jancatit Technology | The leading information technology</title>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" CONTENT="max-age=315360000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Join the thousands of businesses with us today.">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,8 +17,8 @@
     <link rel="canonical" href="http://jancatit.com/">
     <link rel="shortcut icon" href="static/www/ico/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/revolution-slider/rs-plugin/css/settings.min.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="dist/www/css/jancatit.min.css">
+    <link rel="stylesheet" href="static/revolution-slider/rs-plugin/css/settings.min.201703072143.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="dist/www/css/jancatit.min.201703072143.css">
     <script>
         function checkWebp() {
             try {
@@ -27,8 +28,8 @@
             }
         }
         var jc_format = checkWebp() ? ".webp" : ".jpg";
-        function getWebp(id, path) {
-            document.getElementById(id).src = "static/www/img/" + path + id + jc_format
+        function getWebp(id, path, version) {
+            document.getElementById(id).src = "static/www/img/" + path + id + version + jc_format
         }
     </script>
 </head>
@@ -88,7 +89,7 @@
                         </div>
                     </li>
                     <script>
-                        getWebp("bg1", "sliders/revolution/");
+                        getWebp("bg1", "sliders/revolution/", ".201703072143");
                     </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
                         <img id="bg2" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
@@ -104,7 +105,7 @@
                         </div>
                     </li>
                     <script>
-                        getWebp("bg2", "sliders/revolution/");
+                        getWebp("bg2", "sliders/revolution/", ".201703072143");
                     </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
                         <img id="bg3" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
@@ -120,7 +121,7 @@
                         </div>
                     </li>
                     <script>
-                        getWebp("bg3", "sliders/revolution/");
+                        getWebp("bg3", "sliders/revolution/", ".201703072143");
                     </script>
                 </ul>
             </div>
@@ -172,7 +173,7 @@
                 <div class="img-center">
                     <img id="mockup" class="img-responsive" alt="">
                     <script>
-                        getWebp("mockup", "");
+                        getWebp("mockup", "", ".201703072143");
                     </script>
                 </div>
             </div>
@@ -229,7 +230,7 @@
                 <div class="col-md-6">
                     <img id="product" class="img-responsive" alt="">
                     <script>
-                        getWebp("product", "");
+                        getWebp("product", "", ".201703072143");
                     </script>
                 </div>
             </div>
@@ -281,7 +282,7 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="dist/www/js/jancatit.min.js"></script>
+    <script src="dist/www/js/jancatit.min.201703072143.js"></script>
     <script>
         jQuery(document).ready(function() {
             App.init();

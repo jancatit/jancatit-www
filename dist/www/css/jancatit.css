@@ -428,7 +428,7 @@ img.img-center,
     padding: 100px 0;
     position: relative;
     text-align: center;
-    background: url(../img/faces.jpg) 50% 0 repeat fixed;
+    background: url(../img/faces.201703072143.jpg) 50% 0 repeat fixed;
 }
 
 .parallax-quote:after {
@@ -1026,7 +1026,7 @@ li a {
 .contacts-section {
     color: #fff;
     position: relative;
-    background: #333 url(../img/footer.jpg) center fixed;
+    background: #333 url(../img/footer.201703072143.jpg) center fixed;
     background-size: cover;
 }
 
