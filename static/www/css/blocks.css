@@ -3,7 +3,7 @@
   padding: 100px 0;
   position: relative;
   text-align: center;
-  background: url(../img/faces.jpeg) 50% 0 repeat fixed;
+  background: url(../img/faces.jpg) 50% 0 repeat fixed;
 }
 
 .parallax-quote:after {
