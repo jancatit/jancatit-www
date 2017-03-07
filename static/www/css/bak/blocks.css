@@ -1,0 +1,163 @@
+.parallax-quote {
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
+  background: url(../img/faces.jpg) 50% 0 repeat fixed;
+}
+
+.parallax-quote:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+}
+
+.parallax-quote:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  background: url(../img/patterns/gridtile.png) repeat;
+}
+
+.parallax-quote-in {
+  z-index: 1;
+  padding: 0 80px;
+  position: relative;
+}
+
+.parallax-quote-in p {
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.parallax-quote-in p:after,
+.parallax-quote-in p:before {
+  content: ' " ';
+  position: absolute;
+  font-family: Tahoma;
+}
+
+.parallax-quote-in p:after {
+  margin-left: 3px;
+}
+
+.parallax-quote-in p:before {
+  margin-left: -15px;
+}
+
+.parallax-quote-in small {
+  color: #bbb;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+  .parallax-quote-in {
+    padding: 0 40px;
+  }
+
+  .parallax-quote-in p {
+    font-size: 20px;
+  }
+}
+.tp-dottedoverlay {
+  z-index: 1 !important;
+}
+
+.tp-bullets.preview4 .bullet {
+  border-radius: 10px !important;
+}
+.tp-banner-container ul li,
+.fullscreenbanner-container ul li {
+  list-style: none;
+  visibility: hidden;
+}
+
+.rs-caption-1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 200;
+  padding: 6px 75px;
+  position: relative;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+}
+
+.rs-caption-1:after,
+.rs-caption-1:before {
+  font-size: 16px;
+  content: "\e804";
+  position: absolute;
+  font-family: fontello;
+}
+
+@media (max-width: 768px) {
+  .rs-caption-1:after,
+  .rs-caption-1:before {
+    content: "";
+  }
+}
+
+.rs-caption-1:after {
+  right: 4%;
+}
+
+.rs-caption-1:before {
+  left: 4%;
+}
+
+.rs-caption-2 {
+  color: #fff;
+  position: relative;
+  font-size: 26px;
+  font-weight: 200;
+  line-height: 40px;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.rs-caption-2:after {
+  left: 50%;
+  content: "";
+  height: 1px;
+  width: 100px;
+  bottom: -10px;
+  /*background: #fff;*/
+  margin-left: -50px;
+  position: absolute;
+}
+
+.rs-caption-3 a {
+  margin: 0 5px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .rs-caption-1,
+  .rs-caption-2,
+  .rs-caption-3 {
+    font-weight: normal;
+  }
+}
+
+.content-boxes-v3 i.icon-custom {
+	top: 8px;
+	float: left;
+	position: relative;
+}
+
+.content-boxes-v3 .content-boxes-in-v3 {
+	padding: 0 20px;
+	overflow: hidden;
+}

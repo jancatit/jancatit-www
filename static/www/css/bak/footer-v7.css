@@ -1,0 +1,87 @@
+.contacts-section {
+    color: #fff;
+    position: relative;
+    background: #333 url(../img/footer.jpg) center fixed;
+    background-size: cover;
+}
+
+.contacts-section:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contacts-section:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background: url(../img/patterns/gridtile.png) repeat;
+}
+
+.contacts-section .title-v1 p,
+.contacts-section .title-v1 h2 {
+    color: #fff;
+}
+
+.contacts-in {
+    z-index: 1;
+    color: #fff;
+    position: relative;
+}
+
+.contacts-in ul {
+    margin-top: 20px;
+}
+
+.contacts-in li {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.contacts-in li a {
+    color: #fff;
+}
+
+.contacts-in li i {
+    width: 35px;
+    padding: 8px;
+    font-size: 18px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.copyright-section {
+    z-index: 1;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    padding: 25px 0 20px;
+}
+
+.copyright-section p {
+    font-size: 14px;
+}
+
+.copyright-section i.back-to-top:hover {
+  color: #72c02c;
+}
+.copyright-section i.back-to-top {
+  left: 50%;
+  top: -35px;
+  font-size: 20px;
+  background: #fff;
+  padding: 8px 10px;
+  margin-left: -15px;
+  position: absolute;
+}

@@ -1,0 +1,255 @@
+h1 {
+	font-size: 28px;
+	line-height: 35px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 33px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #555;
+	margin-top: 5px;
+	text-shadow: none;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+}
+.title-v1 {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.title-v1 h1,
+.title-v1 h2 {
+	color: #444;
+	font-size: 28px;
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+}
+.title-v1 h1:after,
+.title-v1 h2:after {
+	bottom: 0;
+	left: 50%;
+	height: 1px;
+	width: 70px;
+	content: " ";
+	margin-left: -35px;
+	position: absolute;
+	background: #72c02c;
+}
+.title-v1 p {
+	font-size: 17px;
+	font-weight: 200;
+}
+.title-v1 {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.title-v1 h1,
+.title-v1 h2 {
+	color: #444;
+	font-size: 28px;
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+}
+
+.title-v1 h1:after,
+.title-v1 h2:after {
+	bottom: 0;
+	left: 50%;
+	height: 1px;
+	width: 70px;
+	content: " ";
+	margin-left: -35px;
+	position: absolute;
+	background: #72c02c;
+}
+
+h2.heading-sm,
+h3.heading-md {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.dropdown-menu,
+.navbar-toggle {
+	border-radius: 0;
+}
+
+.btn-u {
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 6px 13px;
+	position: relative;
+	background: #72c02c;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+}
+.btn-u:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+	@-moz-document url-prefix() {
+		.btn-u {
+			padding-bottom: 6px;
+		}
+	}
+}
+
+.btn-u:hover,
+.btn-u:focus,
+.btn-u:active,
+.btn-u.active,
+.open .dropdown-toggle.btn-u {
+	background: #5fb611;
+}
+
+.btn-u.btn-brd {
+	color: #555;
+	background: none;
+	padding: 5px 13px;
+	border: solid 1px transparent;
+}
+
+.btn-u.btn-brd:hover {
+	background: none;
+}
+.btn-u.btn-brd:focus {
+	background: none;
+}
+.btn-u.btn-brd.btn-brd-hover:hover {
+	color: #fff !important;
+}
+
+.btn-u.btn-brd {
+	border-color: #72c02c;
+}
+.btn-u.btn-brd:hover {
+	color: #5fb611;
+	border-color: #5fb611;
+}
+.btn-u.btn-brd.btn-brd-hover:hover {
+	background: #5fb611;
+}
+
+i.icon-custom {
+	color: #555;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	margin-bottom: 5px;
+	text-align: center;
+	display: inline-block;
+	border: solid 1px #555;
+}
+
+i.icon-md {
+	width: 55px;
+	height: 55px;
+	font-size: 22px;
+	line-height: 55px;
+}
+
+i.icon-bg-u,
+i.icon-bg-red,
+i.icon-bg-sea,
+i.icon-bg-dark,
+i.icon-bg-darker,
+i.icon-bg-grey,
+i.icon-bg-blue,
+i.icon-bg-green,
+i.icon-bg-yellow,
+i.icon-bg-orange,
+i.icon-bg-purple,
+i.icon-bg-aqua,
+i.icon-bg-brown,
+i.icon-bg-dark-blue,
+i.icon-bg-light-grey,
+i.icon-bg-light-green {
+	color: #fff;
+	border-color: transparent;
+}
+
+i.icon-bg-u {
+	background: #72c02c;
+}
+
+i.icon-bg-dark {
+	background: #555;
+}
+
+i.icon-line {
+	font-size: 17px;
+}
+
+i.icon-md.icon-line {
+	font-size: 22px;
+}
+
+.content-lg {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.margin-bottom-5,
+.margin-bottom-10,
+.margin-bottom-15,
+.margin-bottom-20,
+.margin-bottom-25,
+.margin-bottom-30,
+.margin-bottom-35,
+.margin-bottom-40,
+.margin-bottom-45,
+.margin-bottom-50,
+.margin-bottom-55,
+.margin-bottom-60,
+.margin-bottom-100 {
+	 clear:both;
+}
+.margin-bottom-40 { margin-bottom:40px;}
+
+@media (max-width: 992px) {
+	.md-margin-bottom-30 {
+		margin-bottom: 30px;
+	}
+	.md-margin-bottom-40 {
+		margin-bottom: 40px;
+	}
+}
+
+.color-green { color: #72c02c;}
+
+.bg-grey {
+	background: #f7f7f7;
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+}
+
+.rounded-x { border-radius: 50% !important;}
+
+img.img-center,
+.img-center img {
+	margin-left: auto;
+	margin-right: auto;
+}
+.btn-u.btn-brd.btn-u-light {
+	color: #fff;
+	border-color: #fff;
+}
