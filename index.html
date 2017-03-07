@@ -35,7 +35,7 @@
             console.log(isWebp)
             return isWebp;
         }
-        var jc_format = jc_check() ? "webp" : "jpg";
+        var jc_format = jc_check() ? ".webp" : ".jpg";
     </script>
 </head>
 
@@ -94,7 +94,7 @@
                         </div>
                     </li>
                     <script>
-                        document.getElementById("bg1").src = "static/www/img/sliders/revolution/bg1." + jc_format
+                        document.getElementById("bg1").src = "static/www/img/sliders/revolution/bg1" + jc_format
                     </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
                         <img src="static/www/img/sliders/revolution/bg2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
