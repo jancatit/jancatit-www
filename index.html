@@ -26,10 +26,9 @@
                 return false;
             }
         }
-
+        var jc_format = checkWebp() ? ".webp" : ".jpg";
         function getWebp(id, path) {
-            var format = checkWebp() ? ".webp" : ".jpg";
-            document.getElementById(id).src = "static/www/img/" + path + id + format
+            document.getElementById(id).src = "static/www/img/" + path + id + jc_format
         }
     </script>
 </head>
@@ -278,6 +277,7 @@
         ga('create', 'UA-93090545-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
