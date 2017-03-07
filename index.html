@@ -19,23 +19,14 @@
     <link rel="stylesheet" href="static/revolution-slider/rs-plugin/css/settings.min.css" type="text/css" media="screen">
     <link rel="stylesheet" href="dist/www/css/jancatit.min.css">
     <script>
-        var jc_check = function() {
-            var d = document;
-            var isWebp;
+        function checkWebp() {
             try {
-                var ele = d.createElement('object');
-                ele.type = 'image/webp';
-                ele.innerHTML = '!';
-                d.body.appendChild(ele);
-                isWebp = !ele.offsetWidth;
-                d.body.removeChild(ele);
+                return (document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0);
             } catch (err) {
-                isWebp = false;
+                return false;
             }
-            console.log(isWebp)
-            return isWebp;
         }
-        var jc_format = jc_check() ? ".webp" : ".jpg";
+        var jc_format = checkWebp() ? ".webp" : ".jpg";
     </script>
 </head>
 
