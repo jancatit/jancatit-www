@@ -26,7 +26,11 @@
                 return false;
             }
         }
-        var jc_format = checkWebp() ? ".webp" : ".jpg";
+
+        function getWebp(id, path) {
+            var format = checkWebp() ? ".webp" : ".jpg";
+            document.getElementById(id).src = "static/www/img/" + path + id + format
+        }
     </script>
 </head>
 
@@ -85,7 +89,7 @@
                         </div>
                     </li>
                     <script>
-                        document.getElementById("bg1").src = "static/www/img/sliders/revolution/bg1" + jc_format
+                        getWebp("bg1", "sliders/revolution/");
                     </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
                         <img id="bg2" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
@@ -101,7 +105,7 @@
                         </div>
                     </li>
                     <script>
-                        document.getElementById("bg2").src = "static/www/img/sliders/revolution/bg2" + jc_format
+                        getWebp("bg2", "sliders/revolution/");
                     </script>
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
                         <img id="bg3" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
@@ -117,7 +121,7 @@
                         </div>
                     </li>
                     <script>
-                        document.getElementById("bg3").src = "static/www/img/sliders/revolution/bg3" + jc_format
+                        getWebp("bg3", "sliders/revolution/");
                     </script>
                 </ul>
             </div>
@@ -167,7 +171,10 @@
                     <p>Focusing on designing adn developing the <strong>success business IT</strong> products with IT technologies.</p>
                 </div>
                 <div class="img-center">
-                    <img class="img-responsive" src="static/www/img/mockup.jpg" alt="">
+                    <img id="mockup" class="img-responsive" alt="">
+                    <script>
+                        getWebp("mockup", "");
+                    </script>
                 </div>
             </div>
         </div>
@@ -221,7 +228,10 @@
                 </div>
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="static/www/img/product.jpg" alt="">
+                    <img id="product" class="img-responsive" alt="">
+                    <script>
+                        getWebp("product", "");
+                    </script>
                 </div>
             </div>
         </div>
